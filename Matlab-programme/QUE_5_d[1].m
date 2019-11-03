@@ -1,0 +1,11 @@
+clc;
+close all;
+clear all;
+x=[1,1,1,2,1,1];
+h=[1,1,2,1];
+N=length(x)+length(h)-1;
+X=fft(x,N);
+H=fft(h,N);
+Y=X.*H;
+y=ifft(Y);
+stem(y);

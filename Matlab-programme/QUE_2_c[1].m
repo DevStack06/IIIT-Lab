@@ -1,0 +1,12 @@
+clc;
+clear all;
+close all;
+prompt='amp';
+a=input(prompt);
+prompt='freq';
+f=input(prompt);
+prompt='phase';
+p=input(prompt);
+t=-pi:0.01:pi;
+x=a*sin(2*pi*f*t+p);
+plot(t,x);
